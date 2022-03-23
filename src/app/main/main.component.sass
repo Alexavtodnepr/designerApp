@@ -1,0 +1,124 @@
+html
+  font-family: "Montserrat", sans-serif
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.block1
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/designerapp-71abf.appspot.com/o/%D1%84%D0%BE%D0%BD.jpg?alt=media&token=91c0083c-1c2c-466b-91c3-a0897702642e')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+.container
+  margin: 0 auto
+  max-width: 100vw
+  width: 100%
+
+.block-one
+  padding-bottom: 20px
+  width: 100%
+  height: 100%
+  &__logo
+    padding: 50px 0 100px 60px
+    display: flex
+    flex-wrap: wrap
+    img
+      width: 177px
+      height: 122px
+    h1
+      font-size: 64px
+      width: 30%
+  &__link
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    padding: 50px 0 0 100px
+    &-tel, &-insta, &-mail
+      padding: 22px 0
+a
+  text-decoration: none
+  font-size: 26px
+  color: black
+  padding-left: 20px
+
+p
+  padding: 0 50px
+  font-size: 18px
+  line-height: 30px
+
+.block-two, .block-three
+  padding-top: 20px
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  background-image: radial-gradient(at bottom center, #ffffff, #D5DADD)
+  & img
+    width: 332px
+    height: 332px
+  &__img
+    padding: 40px
+    border: thick double #ffffff
+    border-radius: 40px
+    transition: 1s
+    margin: 50px
+    &:hover
+      transform: scale(1.5)
+  &__p
+    text-align: center
+    font-size: 14px
+
+.block-three
+  background-image: radial-gradient(at top center, #ffffff, #D5DADD)
+
+.block-discript
+  padding: 50px 20px
+  background: #d5dadd
+
+.video-block
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+.video-container
+  margin: 20px
+  padding: 10px
+  border-radius: 10px
+  box-shadow: 5px 5px 15px 5px rgba(114, 110, 110, 0.65)
+
+.video-h2
+  text-align: center
+  margin: 10px
+  & a
+    text-decoration: none
+    color: black
+
+@media screen and  (max-width: 990px)
+  .block-two, .block-three
+    justify-content: center
+    &__img
+      display: block
+
+@media screen and ( max-width: 768px )
+  .block-two, .block-three
+    justify-content: center
+
+@media screen and ( max-width: 580px )
+  .block-one__logo
+    flex-direction: column
+  .block-two, .block-three
+    & img
+      width: 200px
+      height: 200px
+    & p
+      padding: 0
+
+  .block-one__link
+    padding: 10px
+    & a
+      font-size: 16px
+  .block-one__logo
+    & h1
+      font-size: 35px
