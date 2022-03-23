@@ -1,0 +1,252 @@
+html
+  font-family: "Montserrat", sans-serif
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.block1
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/designerapp-71abf.appspot.com/o/%D1%84%D0%BE%D0%BD.jpg?alt=media&token=91c0083c-1c2c-466b-91c3-a0897702642e')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  height: 616px
+  background-color: #d5dadd
+
+.container
+  margin: 0 auto
+  max-width: 100vw
+  width: 100%
+  background-color: #d5dadd
+
+.block-one
+  padding-top: 63px
+  padding-bottom: 20px
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: nowrap
+  &__logo
+    display: flex
+    flex-wrap: wrap
+    img
+      width: 177px
+      height: 122px
+    h1
+      font-size: 64px
+      width: 30%
+  &__link
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    padding: 50px 0 0 100px
+    &-tel, &-insta, &-mail
+      padding: 22px 0
+.block-rigth p
+  padding: 5px 0
+
+a
+  text-decoration: none
+  font-size: 26px
+  color: black
+  padding-left: 20px
+
+p
+  padding: 0 50px
+  font-size: 18px
+  line-height: 30px
+
+.block-two, .block-three
+  padding-top: 20px
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  background-image: radial-gradient(at bottom center, #ffffff, #D5DADD)
+  & img
+    width: 332px
+    height: 332px
+  &__img
+    padding: 40px
+    border: thick double #ffffff
+    border-radius: 40px
+    transition: 1s
+    margin: 50px
+    cursor: pointer
+    background: #e7eaec
+    &:hover
+      transform: scale(1.5)
+  &__p
+    text-align: center
+    font-size: 14px
+
+.block-three
+  background-image: radial-gradient(at top center, #ffffff, #D5DADD)
+.block-discript_cont
+  background: #d5dadd
+.block-discript
+  padding: 50px 20px
+  display: flex
+  position: relative
+  height: 100%
+  max-height: 400px
+  overflow: hidden
+  max-width: 1200px
+  margin: 0 auto
+
+.wrapper-gallery
+  width: 100%
+  transition: all .3s
+  margin: 0 auto
+  display: flex
+  flex-wrap: nowrap
+  position: relative
+  left: 0
+  & img
+    margin: 50px 0
+    max-height: 320px
+
+.gallery-btn
+  width: 52px
+  height: 52px
+  border-radius: 50%
+  position: absolute
+  right: 10px
+  top: 50%
+  cursor: pointer
+  &:active
+    border: 1px solid black
+  &:hover
+    opacity: .9
+
+.video-block
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+.video-container
+  margin: 20px
+  padding: 10px
+  border-radius: 10px
+  box-shadow: 5px 5px 15px 5px rgba(114, 110, 110, 0.65)
+
+.video-h2
+  text-align: center
+  margin: 10px
+  & a
+    text-decoration: none
+    color: black
+//.rel-block
+//  position: relative
+//.modal-wrapper
+//  position: fixed
+//  width: 100%
+//  height: 100%
+//  background: black
+//  z-index: 1000
+//  top: 0
+//  left: 0
+//.close
+//  color: #FFFFFF
+//  cursor: pointer
+//  position: absolute
+//  right: 10px
+//  top: 10px
+//  font-size: 30px
+//.main-photo
+//  position: absolute
+//  top: 50%
+//  left: 50%
+//  transform: translate(-50%, -50%)
+//  transition: all .7s
+//  max-width: 900px
+//  max-height: 500px
+//  width: 100%
+//  height: 100%
+//  &__wrapper
+//    overflow: hidden
+//    position: absolute
+//    max-height: 500px
+//    object-fit: contain
+//    top: 50%
+//    left: 50%
+//    transform: translate(-50%, -50%)
+//  &__img
+//    max-height: 500px
+//.left, .right
+//  position: absolute
+//  font-size: 80px
+//  font-weight: bold
+//  color: white
+//  border-radius: 50%
+//  cursor: pointer
+//  &:active
+//    border: 1px solid white
+//.left
+//  top: 50%
+//  left: -30px
+//  transform: translate(-50%, -50%)
+//
+//.right
+//  position: absolute
+//  font-size: 80px
+//  font-weight: bold
+//  color: white
+//  border-radius: 50%
+//  top: 50%
+//  right: -74px
+//  transform: translate(-50%, -50%)
+//
+//.photos
+//  display: flex
+//  justify-content: center
+//  align-items: flex-end
+//  flex-direction: row
+//  width: 100%
+//  height: 100%
+//.prevImg
+//  height: 100px
+//  margin: 5px
+//  cursor: pointer
+@media screen and ( max-width: 1160px )
+  .block1
+    height: 100%
+    padding: 0 10px
+  .block-one
+    flex-wrap: wrap
+  .block-one__link div a
+    font-size: 50px
+@media screen and  (max-width: 990px)
+  .block-two, .block-three
+    justify-content: center
+    &__img
+      display: block
+
+@media screen and ( max-width: 768px )
+  .block-two, .block-three
+    justify-content: center
+  .block-one__link div a
+    font-size: 30px
+
+@media screen and ( max-width: 580px )
+  .block-one__logo
+    flex-direction: column
+  .block-two, .block-three
+    & img
+      width: 200px
+      height: 200px
+    & p
+      padding: 0
+
+  .block-one__link
+    padding: 10px
+    & a
+      font-size: 16px
+  .block-one__logo
+    & h1
+      font-size: 35px
+@media screen and ( max-width: 450px )
+  .block-one__link div a
+    font-size: 20px
