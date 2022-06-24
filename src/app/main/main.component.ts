@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {AfterViewChecked, Component, ElementRef, OnInit} from '@angular/core';
 //
 // const PhotoArr = {
@@ -15,16 +14,12 @@ import {AfterViewChecked, Component, ElementRef, OnInit} from '@angular/core';
 //   boxes: ['./assets/2.png', './assets/1.png', './assets/3.png', './assets/4.png', './assets/5.png', './assets/4.png'],
 //
 // }
-=======
-import { Component, OnInit } from '@angular/core';
->>>>>>> origin/master
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.sass']
 })
-<<<<<<< HEAD
 
 export class MainComponent implements OnInit, AfterViewChecked {
   sizeArray: number[] = [];
@@ -68,6 +63,7 @@ export class MainComponent implements OnInit, AfterViewChecked {
 
     }
   }
+
   //
   // openGallery(photoList: any) {
   //   for(let key in PhotoArr){
@@ -127,13 +123,4 @@ export class MainComponent implements OnInit, AfterViewChecked {
   //   body.style.overflow = 'scroll';
   //   this.numberPhoto = 0;
   // }
-=======
-export class MainComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
->>>>>>> origin/master
 }
