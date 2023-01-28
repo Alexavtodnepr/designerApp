@@ -22,105 +22,14 @@ import {AfterViewChecked, Component, ElementRef, OnInit} from '@angular/core';
 })
 
 export class MainComponent implements OnInit, AfterViewChecked {
-  sizeArray: number[] = [];
-  left: any = 0;
-  step: number = 0;
-  galleryWidth: number = 0;
-  count: number = 0;
-  imgArray: any[] = [];
-  // modal = false;
-  // image: string = '';
-  // ArrayImg:any[] = [];
-  // numberPhoto: number = 0;
 
 
   constructor(public el: ElementRef) {
   }
 
   ngOnInit(): void {
-    // console.log(this.photoArr)
   }
 
   ngAfterViewChecked(): void {
-    let block = this.el.nativeElement;
-    let gallery = block.getElementsByClassName('wrapper-gallery');
-    this.imgArray = gallery[0].children;
-    this.galleryWidth = gallery[0].offsetWidth;
-    if (this.galleryWidth <= 1100) {
-      this.step = 250;
-    } else {
-      this.step = +(this.galleryWidth / this.imgArray.length);
-    }
   }
-
-  SizeAp() {
-    if (this.count >= this.imgArray.length - 1) {
-      this.count = 0;
-      this.left = 0;
-    } else {
-      this.count++;
-      this.left -= this.step;
-
-    }
-  }
-
-  //
-  // openGallery(photoList: any) {
-  //   for(let key in PhotoArr){
-  //     if(key === photoList){
-  //       // @ts-ignore
-  //       this.ArrayImg = PhotoArr[key];
-  //     }
-  //   }
-  //   this.modal = true;
-  //   let body = this.el.nativeElement.offsetParent;
-  //   if(this.modal){
-  //     body.style.overflow = 'hidden';
-  //   }else{
-  //     body.style.overflow = 'scroll';
-  //   }
-  //   this.image = this.ArrayImg[this.numberPhoto]
-  // }
-  //
-  // gallery(array: string[]){
-  //   if(this.modal){
-  //     this.ArrayImg = array;
-  //     this.image = array[this.numberPhoto]
-  //   }
-  // }
-  //
-  // targetPict(event: any) {
-  //   console.log(event.target.src)
-  //   this.image = event.target.src;
-  // }
-  //
-  // rightStep() {
-  //   if(this.ArrayImg.length == 1){
-  //     this.image = this.ArrayImg[0]
-  //   }
-  //   if(this.numberPhoto == this.ArrayImg.length-1){
-  //     this.numberPhoto = 0;
-  //   }
-  //   this.numberPhoto++;
-  //   this.image = this.ArrayImg[this.numberPhoto]
-  // }
-  //
-  // leftStep() {
-  //   if(this.ArrayImg.length == 1){
-  //     this.image = this.ArrayImg[0]
-  //   }
-  //   if(this.numberPhoto<=0){
-  //     this.numberPhoto = this.ArrayImg.length -1;
-  //   }else{
-  //     this.numberPhoto--;
-  //     this.image = this.ArrayImg[this.numberPhoto];
-  //   }
-  // }
-  //
-  // closeModal() {
-  //   this.modal = false;
-  //   let body = this.el.nativeElement.offsetParent;
-  //   body.style.overflow = 'scroll';
-  //   this.numberPhoto = 0;
-  // }
 }

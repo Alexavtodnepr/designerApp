@@ -1,10 +1,6 @@
 {
   "hosting": {
-<<<<<<< HEAD
     "public": "dist/designerApp",
-=======
-    "public": "designerApp/dist/designerApp",
->>>>>>> origin/master
     "ignore": [
       "firebase.json",
       "**/.*",

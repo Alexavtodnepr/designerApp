@@ -1,164 +1,108 @@
-<div class="container  block1">
-  <div class="block-one">
-    <div class="block-left">
-      <div class="block-one__logo">
-        <img src="./assets/logo.png" alt="">
-        <h1>Katherine Pyskun</h1>
-      </div>
-      <div class="block-one__link">
-        <div class="block-one__link-tel">
-          <img src="https://firebasestorage.googleapis.com/v0/b/designerapp-71abf.appspot.com/o/phone.png?alt=media&token=b560657d-bf1f-4987-b824-20edf6281b21" alt="">
-          <a href="tel:+380509194529">+380509194529</a>
-        </div>
-        <div class="block-one__link-insta">
-          <img src="https://firebasestorage.googleapis.com/v0/b/designerapp-71abf.appspot.com/o/insta.png?alt=media&token=a6db4ea9-d96c-4902-80eb-9262f409a685" alt="">
-          <a href="https://www.instagram.com/cat_pyskun/?utm_medium=copy_link">cat_pyskun</a>
-        </div>
-        <div class="block-one__link-mail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/designerapp-71abf.appspot.com/o/email.png?alt=media&token=c4cdca74-ed1b-4700-9cb6-3645d5007d3a" alt="">
-          <a href="mailto:katherine.dereeva@gmail.com">katherine.dereeva@gmail.com</a>
-        </div>
-      </div>
-
+<div class="header-block">
+  <div class="logo"><a href="https://designerapp-71abf.web.app/"><img src="./assets/imgs/logo.svg" alt="DesignerLogo"></a></div>
+  <div class="links-block">
+    <a href="mailto:katherine.dereeva@gmail.com"><svg width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 0H4C2.075 0 0.5175 1.575 0.5175 3.5L0.5 24.5C0.5 26.425 2.075 28 4 28H32C33.925 28 35.5 26.425 35.5 24.5V3.5C35.5 1.575 33.925 0 32 0ZM32 24.5H4V7L18 15.75L32 7V24.5ZM18 12.25L4 3.5H32L18 12.25Z" fill="black"/>
+    </svg></a>
+    <a href="tel:+380509194529"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30.0175 21.915C27.865 21.915 25.7825 21.565 23.84 20.935C23.2275 20.725 22.545 20.8825 22.0725 21.355L19.325 24.8025C14.3725 22.44 9.735 17.9775 7.2675 12.85L10.68 9.945C11.1525 9.455 11.2925 8.7725 11.1 8.16C10.4525 6.2175 10.12 4.135 10.12 1.9825C10.12 1.0375 9.3325 0.25 8.3875 0.25H2.3325C1.3875 0.25 0.25 0.67 0.25 1.9825C0.25 18.24 13.7775 31.75 30.0175 31.75C31.26 31.75 31.75 30.6475 31.75 29.685V23.6475C31.75 22.7025 30.9625 21.915 30.0175 21.915Z" fill="black"/>
+    </svg></a>
+    <a target="_blank" href="https://www.instagram.com/cat_pyskun"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <rect width="42" height="42" fill="url(#pattern0)"/>
+      <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_1_10" transform="scale(0.0104167)"/>
+        </pattern>
+        <image id="image0_1_10" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+      </defs>
+    </svg></a>
+  </div>
+</div>
+<div class="description-block">
+  <div class="description">
+    Professional designer. Experience in advertising and printing. <br>
+    Web design and UI/UX. <br>
+    Creation of photo and video content. <br>
+    This is a small part of my work. <br>
+    You can see my photos and videos of work on the link in instagram. <br>
+  </div>
+</div>
+<div class="web-block">
+  <div class="web-block__row">
+    <div class="item"><a target="_blank" href="https://www.figma.com/proto/WtUzJ7Dq9Gs1Gk9EjhRaBB/UX%2FUI--day-3?node-id=0%3A373&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A5044&show-proto-sidebar=1"><img src="./assets/imgs/goose.png" alt=""></a></div>
+    <div class="item title-block ux"><h2>{{'web ux/ui' | uppercase}}</h2></div>
+    <div class="item tamper"><a target="_blank" href="https://tamper.com.ua/"><img src="./assets/imgs/tamper.png" alt=""></a></div>
+    <div class="item"><a target="_blank" href="https://www.figma.com/proto/ZpHakXradPZCJyPzwoo8j6/%D0%98%D0%97%D0%9E%D0%9B%D0%95%D0%9D%D0%A2%D0%90?node-id=53%3A21&scaling=scale-down&page-id=0%3A1"><img src="./assets/imgs/lent.png" alt=""></a></div>
+  </div>
+  <div class="web-block__row row2">
+    <div class="item"><a target="_blank" href="https://www.figma.com/proto/2dwxo09LIEbDasHUFDrwr6/Untitled?node-id=2%3A2&scaling=scale-down&page-id=0%3A1"><img src="./assets/imgs/petTravel.png" alt=""></a></div>
+    <div class="item"><a target="_blank" href="https://www.figma.com/proto/ZpHakXradPZCJyPzwoo8j6/%D0%98%D0%97%D0%9E%D0%9B%D0%95%D0%9D%D0%A2%D0%90?node-id=1%3A2&scaling=scale-down&page-id=0%3A1"><img src="./assets/imgs/lentPenguin.png" alt=""></a></div>
+    <div class="item"><a target="_blank" href="https://www.figma.com/proto/du76MOsVjusxcfbJiu9i2J/find-the-recipe?node-id=1%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3"><img src="./assets/imgs/food.png" alt=""></a></div>
+    <div class="item"><a target="_blank" href="https://www.figma.com/file/ulnI9UWQ9CHJ9x7fyHSwHS/%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D0%B0-%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0--%D0%9F%D0%B8%D1%81%D0%BA%D1%83%D0%BD-%D0%9A%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0?node-id=0%3A1"><img src="./assets/imgs/security.png" alt=""></a></div>
+  </div>
+</div>
+<div class="poligrafy-block">
+  <div class="title-block poligrafy-title"><h2>LOGO&POLYGRAPHY</h2></div>
+  <div class="poligrafy-items__block">
+    <div class="polItem box1"><img src="./assets/imgs/polFirstPic.png" alt=""></div>
+    <div class="polItem box2"><img src="./assets/imgs/polSecondPic.png" alt=""></div>
+    <div class="polItem box3"><img src="./assets/imgs/polThirdPic.png" alt=""></div>
+    <div class="polItem box4"><img src="./assets/imgs/polFourthPic.png" alt=""></div>
+  </div>
+<!--  <div class="poligrafy-items__mobi">-->
+<!--    <div class="polItem box1"><img src="./assets/imgs/polFirstPic.png" alt=""></div>-->
+<!--    <div class="polItem box2"><img src="./assets/imgs/polSecondPic.png" alt=""></div>-->
+<!--    <div class="polItem box3"><img src="./assets/imgs/polThirdPic.png" alt=""></div>-->
+<!--    <div class="polItem box4"><img src="./assets/imgs/polFourthPic.png" alt=""></div>-->
+<!--  </div>-->
+</div>
+<div class="social-block">
+  <div class="social-title__row socialrow1">
+    <div class="social-title">
+      <h2 class="title-block socialTitle">{{'Visual' | uppercase}} <br> {{'for social' | uppercase}} <br> {{'networks' | uppercase}}</h2>
+      <p>promotional product <br> shooting photo and video</p>
     </div>
-    <div class="block-rigth">
-      <p>Professional designer. Experience in advertising and printing. Web design and UI/UX.</p>
-      <p>Knowledge of photography, photography experience.</p>
-      <p>Shooting and editing video. Creation of photo and video content.</p>
-      <p>Experience in creating illustrations.</p>
-      <p>Art studio management.</p>
-      <p>Managing the advertising design department.</p>
-      <p>Logo development.</p>
-      <p>Experience in the direction of the interior, photo wallpapers, canvases, the creation of prints.</p>
-      <p>Experience with handmade (creating interior paintings, painting on fabric, design postcards, etc.)</p>
-      <p>On this page you can see my work. I post only real photos of existing projects.</p>
-      <p>This is a small part of my work. You can see my photos and videos of work on the link in instagram.</p>
+    <div class="social-img example">
+      <img src="./assets/imgs/content1.png" alt="">
+    </div>
+  </div>
+  <div class="social-title__row">
+    <div class="social-img"><img src="./assets/imgs/content2.png" alt=""></div>
+    <div class="social-img"><img src="./assets/imgs/content3.png" alt=""></div>
+    <div class="social-img"><img src="./assets/imgs/content4.png" alt=""></div>
+  </div>
+  <div class="social-title__row socialrow1">
+    <div class="social-title">
+      <h2 class="title-block socialTitle difCol">{{'outdoor decoration' | uppercase}}</h2>
+    </div>
+    <div class="social-img outdoor">
+      <img src="./assets/imgs/outdoor.png" alt="">
+    </div>
+  </div>
+  <div class="social-title__row socialrow1 row-rev">
+    <div class="social-title">
+      <h2 class="title-block socialTitle">{{'souvenirs prints' | uppercase}}</h2>
+    </div>
+    <div class="social-img">
+      <img src="./assets/imgs/souvenir1.png" alt="">
+    </div>
+    <div class="social-img">
+      <img src="./assets/imgs/souvenir2.png" alt="">
+    </div>
+  </div>
+  <div class="social-title__row socialrow1">
+    <div class="social-title">
+      <h2 class="title-block socialTitle difCol">{{'board games' | uppercase}} <br>{{'stands and' | uppercase}} <br> {{'schemes' | uppercase}}</h2>
+    </div>
+    <div class="social-img">
+      <img src="./assets/imgs/games1.png" alt="">
+    </div>
+    <div class="social-img">
+      <img src="./assets/imgs/stands.png" alt="">
     </div>
   </div>
 </div>
-<div class="container block-discript_cont">
-  <div class="block-discript">
-    <div class="wrapper-gallery" [style.left.px]="left">
-      <img src="./assets/g1.png" alt="firstpic">
-      <img src="./assets/g5.png" alt="firstpic">
-      <img src="./assets/g4.png" alt="firstpic">
-      <img src="./assets/g3.png" alt="firstpic">
-      <img src="./assets/g2.png" alt="firstpic">
-    </div>
-
-    <button class="gallery-btn" (click)="SizeAp()"><img src="./assets/arrow-down-drop-circle-outline.png" alt="firstpic"></button>
-
-  </div>
+<div class="footer">
+  <h2 class="title-block footer-t">{{'and much more' | uppercase}}</h2>
+  <h2 class="title-block footer-end">{{'I love my job' | uppercase}}</h2>
 </div>
-<div class="container">
-  <div class="block-two">
-    <div class="block-two__img">
-<!--      (click)="openGallery('logo')"-->
-      <img src="./assets/logoPrev.jpg" alt="logoDesign">
-      <p class="block-two__p">Logo</p>
-    </div>
-    <div class="block-two__img">
-<!--      (click)="openGallery('card')"-->
-      <img src="./assets/cardPrev.jpg" alt="cardDesign">
-      <p class="block-two__p">Business card</p>
-    </div>
-    <div class="block-two__img">
-<!--      (click)="openGallery('certificates')"-->
-      <img src="./assets/giftSertificate.jpg" alt="giftSertificate">
-      <p class="block-two__p">Gift certificates</p>
-    </div>
-    <div class="block-two__img">
-<!--      (click)="openGallery('postcards')"-->
-      <img src="./assets/postCard.jpg" alt="postCard">
-      <p class="block-two__p">Postcards, catalogs, posters</p>
-    </div>
-    <div class="block-two__img">
-<!--      (click)="openGallery('notebooks')"-->
-      <img src="./assets/noteBook.jpg" alt="noteBook">
-      <p class="block-two__p">Author's notebooks and diaries</p>
-    </div>
-    <div class="block-two__img">
-<!--      (click)="openGallery('plates')"-->
-      <img src="./assets/stands.jpg" alt="stands">
-
-      <p class="block-two__p">Stands and information plates</p>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="block-three">
-    <div class="block-three__img">
-<!--      (click)="openGallery('decoration')"-->
-      <img src="./assets/decor.jpg" alt="decoration">
-      <p class="block-three__p">Outdoor decoration</p>
-    </div>
-    <div class="block-three__img">
-<!--      (click)="openGallery('souvenir')"-->
-      <img src="./assets/souvenir.jpg" alt="souvenir">
-      <p class="block-three__p">Souvenir and corporate products</p>
-    </div>
-    <div class="block-three__img">
-<!--      (click)="openGallery('boxes')"-->
-      <img src="./assets/giftBox.jpg" alt="giftBox">
-      <p class="block-three__p">Author's and thematic gift boxes</p>
-    </div>
-    <div class="block-three__img">
-<!--      (click)="openGallery('boardGame')"-->
-      <img src="./assets/boardGame.jpg" alt="boardGame">
-      <p class="block-three__p">Board game development</p>
-    </div>
-    <div class="block-three__img">
-<!--      (click)="openGallery('drawing')"-->
-      <img src="./assets/drawing.jpg" alt="drawing">
-      <p class="block-three__p">Painting and drawing</p>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <h2 class="video-h2"><a href="https://www.youtube.com/channel/UCuo4JfmfVclowv0wcfwt8PQ">My youtube chanel - Cat_Dere</a></h2>
-  <div class="video-block">
-    <div class="video-container">
-      <iframe width="200" height="315" src="https://www.youtube.com/embed/dTPEhpNlPqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/KIvWu4c95Pc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="200" height="315" src="https://www.youtube.com/embed/h6mBxw2iqUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="200" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYfhNnx4LN5zepvhncEiraY6PgeBtA9PG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="200" height="315" src="https://www.youtube.com/embed/bTslGK_qLBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="200" height="315" src="https://www.youtube.com/embed/BJsVIEvBoiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="200" height="315" src="https://www.youtube.com/embed/5wgYRDCH3dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/c_HtT-Yvzb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-<<<<<<< HEAD
-<!--<ng-container *ngIf="modal">-->
-<!--    <div class="modal-wrapper">-->
-<!--      <div class="close" (click)="closeModal()">x</div>-->
-<!--      <div class="main-photo">-->
-<!--          <span class="left" (click)="leftStep()"><</span>-->
-<!--        <div class="main-photo__wrapper">-->
-<!--          <img class="main-photo__img" src="{{image}}" alt="">-->
-<!--        </div>-->
-<!--          <span class="right" (click)="rightStep()">></span>-->
-<!--      </div>-->
-<!--      <div class="photos">-->
-<!--        <img class="prevImg" src="{{img}}" (click)="targetPict($event)" *ngFor="let img of ArrayImg" alt="">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--</ng-container>-->
-
-=======
->>>>>>> origin/master
